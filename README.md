@@ -1,4 +1,4 @@
-# Lumo Docker 4️ musl
+# Lumo Docker 4️⃣ musl
 
 This repo contains the DockerFile necessary for building
 [Lumo](https://github.com/anmonteiro/lumo) (the ClojureScript self-hosted
