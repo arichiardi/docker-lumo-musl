@@ -31,4 +31,4 @@ docker run -v /path/to/lumo:/lumo -v /home/user/.m2:/root/.m2 -v /home/user/.boo
 The `/root/.m2` and `/.boot/cache` mappings are optional but recommended for
 avoiding downloading dependencies multiple times.
 
-The (long) process will compile the lumo static binary in `build`.
+The (long) process will compile the lumo static binary under `/path/to/lumo/build`.
