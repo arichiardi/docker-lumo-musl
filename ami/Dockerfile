@@ -59,4 +59,4 @@ ENV BUILD_STATIC_BINARY=true
 
 WORKDIR /lumo
 
-ENTRYPOINT bash -c "boot release"
+ENTRYPOINT /bin/sh -c "boot release"
