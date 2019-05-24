@@ -22,9 +22,21 @@ docker build . -t lumo-musl-ami
 
 ### Compiling Lumo
 
+First things first, pull down [the docker image](https://cloud.docker.com/repository/docker/arichiardi/lumo-musl-ami):
+
+```shell
+docker pull arichiardi/lumo-musl-ami
+```
+
+Second, clone `lumo`:
+
 ```shell
 git clone git@github.com:anmonteiro/lumo   # anywhere on your filesystem
+```
 
+Finally, build using the image:
+
+```
 docker run -v /path/to/lumo:/lumo -v /home/user/.m2:/root/.m2 -v /home/user/.boot/cache:/.boot/cache --rm lumo-musl-ami
 ```
 
