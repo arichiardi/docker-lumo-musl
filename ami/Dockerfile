@@ -42,7 +42,7 @@ RUN cd /usr/bin && \
 RUN curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo
 RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
 
-RUN yum install -y make java-1.8.0-openjdk-1.8.0.171 yarn
+RUN yum install -y tar gzip make java-1.8.0-openjdk-1.8.0.171 yarn
 
 VOLUME [ "/root/.m2", "/.boot/cache" ]
 
